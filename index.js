@@ -9,6 +9,13 @@ document.getElementById("learnMoreBtn").addEventListener("click", function() {
     }
 });
 
+const accuracyRange = document.getElementById("accuracyRange");
+const accuracyValue = document.getElementById("accuracyValue");
+
+accuracyRange.addEventListener("input", function() {
+    accuracyValue.textContent = this.value + "%";
+});
+
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
     alert("感谢您的留言！我们会尽快与您联系。");
