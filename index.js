@@ -1,22 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // 获取浏览次数
-    let visitCount = localStorage.getItem('visitCount');
-
-    // 如果是第一次访问，初始化计数器
-    if (!visitCount) {
-        visitCount = 371;
-    }
-
-    // 增加浏览次数
-    visitCount++;
-
-    // 将新的计数保存到本地存储中
-    localStorage.setItem('visitCount', visitCount);
-
-    // 在页面上显示浏览次数
-    document.getElementById('visit-count').textContent = '浏览次数：' + visitCount;
-});
-
 document.getElementById("learnMoreBtn").addEventListener("click", function() {
     const moreInfo = document.getElementById("moreInfo");
     if (moreInfo.classList.contains("hidden")) {
