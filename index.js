@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 如果是第一次访问，初始化计数器
     if (!visitCount) {
-        visitCount = 0;
+        visitCount = 371;
     }
 
     // 增加浏览次数
