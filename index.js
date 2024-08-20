@@ -9,14 +9,10 @@ document.getElementById("learnMoreBtn").addEventListener("click", function() {
     }
 });
 
-const accuracyRange = document.getElementById("accuracyRange");
-const accuracyValue = document.getElementById("accuracyValue");
-
-accuracyRange.addEventListener("input", function() {
-    accuracyValue.textContent = this.value + "%";
-});
-
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("感谢您的留言！我们会尽快与您联系。");
+    event.preventDefault(); // 阻止表单的默认提交行为
+    alert("感谢您的留言！我们会尽快与您联系。"); // 显示弹窗信息
+
+    // 清空表单内容
+    this.reset();
 });
