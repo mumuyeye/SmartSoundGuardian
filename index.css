@@ -94,7 +94,8 @@ section h3 {
     padding-bottom: 5px;
 }
 
-section p, section ul {
+section p,
+section ul {
     line-height: 1.6;
     margin: 15px 0;
 }
@@ -139,7 +140,8 @@ ul li {
     margin-top: 10px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -244,4 +246,36 @@ html {
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 图片动态盒子样式 */
+.image-container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container3 img {
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 第一张图片从右侧放大 */
+.image-container3 img:nth-child(1):hover {
+    transform-origin: left center;
+    transform: scale(2);
+}
+
+/* 第二张图片从左侧放大 */
+.image-container3 img:nth-child(2):hover {
+    transform-origin: right center;
+    transform: scale(2);
 }
